@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>belajar bikin web</title>
+  <style>
+  body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 100px 0; /* Jarak bawah untuk navigasi */
+      color: #333;
+      min-height: 100vh;
+    }
+
+    /* 2. KOMPONEN KARTU (GLASSMORPHISM) */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 25px;
+      padding: 25px;
+      border-radius: 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: all 0.4s ease;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    /* 3. HEADER & IDENTITAS */
+    .header-profile {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      margin-top: -25px;
+      margin-left: -25px;
+      margin-right: -25px;
+      padding: 30px;
+      border-radius: 30px 30px 0 0;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 6px solid rgba(255,255,255,0.3);
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 { font-size: 22px; margin: 10px 0; }
+    h2 { font-size: 16px; font-weight: normal; opacity: 0.9; }
+
+    /* 4. MEDIA (FOTO & VIDEO) */
+    img, video {
+      border-radius: 20px;
+      width: 60%;
+      height: auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+
+    /* 5. AUDIO STYLING */
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 50px;
+    }
+
+    /* 6. TABEL MODERN */
+    .table-wrapper {
+      overflow-x: auto;
+      border-radius: 15px;
+      margin-top: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th {
+      background-color: #764ba2;
+      color: white;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+      font-size: 13px;
+    }
+
+    tr:nth-child(even) { background-color: #f8f9fa;
+    }
+    /* 1. CSS NAVIGASI MELAYANG (FLOATING) */
+    .nav-bawah {
+         transform: translateX(5%); /* Menempatkan di tengah layar */
+        width: 90%;
+        max-width: 400px;
+        background: rgba(255, 255, 255, 0.9); /* Transparan putih */
+        backdrop-filter: blur(10px); /* Efek kaca blur */
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+        border-radius: 50px; /* Bentuk kapsul */
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        z-index: 1000;
+        transition: all 0.0s ease;
+    }
+
+    .nav-bawah a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #1e3c72; /* Warna teks yang kontras */
+        font-size: 14px;
+        transition: 0.s;
+    }
+
+    .nav-bawah a:hover {
+        color: #764ba2;
+        transform: scale(1.1); /* Efek membesar saat ditekan */
+    }
+
+    /* 2. CSS FOOTER (COPYRIGHT) */
+    .copyright {
+        background-color: #0f172a; /* Warna gelap elegan */
+        color: #e2e8f0;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        width: 100%;
+        font-size: 12px;
+        border-radius: 20px 20px 0 0; /* Melengkung di bagian atas */
+    }
+    </style>
+</head>
+<body>
+  <div class="card">
+    <div class="nav-bawah">
+      <a href="tentang/tentang.html"
+       <span>❗</span>  Tentang
+       </a>
+       <a href="beranda/beranda.html">
+         <span>📥</span> Beranda
+         </a>
+         <a href="profil/profil.html">
+           <span>👤</span> profil
+           </a>
+           </div>
+           <br>
+        <div class="card">
+          <div class="header-profile">
+  <h1>belajar web</h1>
+  <h2></h2>
+  <h3></h3>
+  <h4></h4>
+  <h5></h5>
+  <h6></h6>
+  <h1><p></p></h1>
+  <p>sedang belajar web</p>
+  <i><o><u></u></o></i>
+  <h1>INI FOTO SAYA</h1>
+  <img src="img/shin.jpg" width="100" height="125" >
+  </div>
+  </div>
+  <br>
+  <div class="card">
+  <h1>INI VIDEO SAYA</h1>
+  <video src="yo.mp4" width="350" height="420" autoplay controls ></video>
+  
+  <h1>INI AUDIO SAYA</h1>
+  <audio source src="sound.mp3"itemtype="sound.mp3/mpg"autoplay controls></audio>
+  </div>
+  <br>
+  <h2>ini table saya</h2>
+<table border="1"bgcolor="white"width="340"height=200>
+  <tr bgcolor="pink">
+    <th>No</th>
+    <th>Nis</th>
+    <th>Nama</th>
+    <th>Kelas</th>
+    
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2835</td>
+    <td>MUDOFAR</td>
+    <td>X PPLG 2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2855</td>
+    <td>IRGI</td>
+    <td>X PPLG 2</td>
+  </tr>
+  
+  <tr>
+    <td>3</td>
+    <td>2832</td>
+    <td>AKMAL</td>
+    <td>X PPLG 2</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>2837</td>
+   <td>TRIYAS</td>
+   <td>X PPLG 2</td>
+   
+</body>
+</html>
